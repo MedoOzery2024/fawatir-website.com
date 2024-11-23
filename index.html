@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الأطيبان لتمور الوادي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img2.png.png" alt="لوجو الشركة">
+            <h1>شركة الأطيبان لتمور الوادي</h1>
+        </div>
+        <div class="clock">
+            <span id="digitalClock"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="invoice">
+            <h2>فاتورة الشراء والبيع</h2>
+            <div class="form">
+                <label>اسم الصنف:</label>
+                <input type="text" id="itemName" placeholder="أدخل اسم الصنف">
+                <label>نوع الصنف:</label>
+                <input type="text" id="itemType" placeholder="أدخل نوع الصنف">
+                <label>كود الصنف:</label>
+                <input type="text" id="itemCode" placeholder="أدخل كود الصنف">
+                <label>الكمية:</label>
+                <input type="number" id="itemQuantity" placeholder="أدخل الكمية">
+                <label>الوحدة:</label>
+                <select id="unitType">
+                    <option value="علب">علب</option>
+                    <option value="كيلو">كيلو</option>
+                </select>
+                <label>سعر الوحدة:</label>
+                <input type="number" id="unitPrice" placeholder="أدخل سعر الوحدة">
+                <button id="addItem">إضافة</button>
+            </div>
+
+            <table id="invoiceTable">
+                <thead>
+                    <tr>
+                        <th>اسم الصنف</th>
+                        <th>نوع الصنف</th>
+                        <th>كود الصنف</th>
+                        <th>الكمية</th>
+                        <th>الوحدة</th>
+                        <th>سعر الوحدة</th>
+                        <th>الإجمالي</th>
+                        <th>تحكم</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- المنتجات المضافة تظهر هنا -->
+                </tbody>
+            </table>
+            <div class="buttons">
+                <button id="editItem">تعديل</button>
+                <button id="deleteItem">حذف</button>
+                <button id="saveInvoice">حفظ</button>
+                <button id="printInvoice">طباعة</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
